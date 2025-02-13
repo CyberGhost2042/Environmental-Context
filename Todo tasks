@@ -1,0 +1,4 @@
+Check Environmental Context Effect (if RAG can be implemented with general purpose models rather than fine tuned models) - Need to clean up and update
+Semantic Chunking (how effective is the context window in this method)
+Testing llm memory
+........
