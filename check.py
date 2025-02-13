@@ -36,12 +36,11 @@ text_chunks=text_splitter.create_documents([page.page_content for page in docume
 
 cleaned_text=clean_texts(document[0].page_content)
 final_chunks = text_splitter.create_documents(cleaned_text)
-print(final_chunks)
-# text_data = [chunk.page_content for chunk in text_chunks]
-# processedtext=clean_texts(text_data)
-# final_chunks=text_splitter.create_documents([text for text in processedtext])
+text_data = [chunk.page_content for chunk in text_chunks]
+processedtext=clean_texts(text_data)
+final_chunks=text_splitter.create_documents([text for text in processedtext])
 
-# connectionurl=os.environ.get("CONNECTION_URL")
-# collectionname="finaltest-vectors"
+connectionurl=os.environ.get("CONNECTION_URL")
+collectionname="finaltest-vectors"
 
-# db=PGVector.from_documents(embedding=embeddingmodel,documents=final_chunks,collection_name=collectionname,connection_string=connectionurl)
+db=PGVector.from_documents(embedding=embeddingmodel,documents=final_chunks,collection_name=collectionname,connection_string=connectionurl)
