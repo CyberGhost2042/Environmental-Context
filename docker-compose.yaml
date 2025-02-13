@@ -1,0 +1,17 @@
+name: test
+
+services:
+  timescaledb:
+    image: timescale/timescaledb-ha:pg17
+    container_name: test
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5800:5432"
+    volumes:
+      - testtimescaledb_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  testtimescaledb_data:
