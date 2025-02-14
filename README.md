@@ -1,4 +1,4 @@
-<img width="1078" alt="Screenshot 2025-02-14 at 6 57 58 AM" src="https://github.com/user-attachments/assets/7ab33820-49bd-43d3-8147-695e64bff695" /># Environmental-Context
+# Environmental-Context
 Playing around with variety of LLM's by 1V1ing if environmental context really effects responses
 
 (Readme will be updated)
